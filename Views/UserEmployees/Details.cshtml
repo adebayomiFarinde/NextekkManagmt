@@ -1,0 +1,135 @@
+﻿@model NextekkManagmt.Models.UserEmployee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <h3 style="color:cadetblue"><strong>Details</strong></h3><br /><br />
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt style="font-size:15px">
+            Active
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt style="font-size:15px">
+            First Name
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt style="font-size:15px">
+            Last Name
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt style="font-size:15px">
+            Date Of Birth
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+        <dt style="font-size:15px">
+            Gender
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.Gender.GenderType)
+        </dd>
+
+        <dt style="font-size:15px">
+            Marital Status
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.MaritalStatus.Status)
+        </dd>
+
+        <dt style="font-size:15px">
+            Number Of Children
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.NumberOfChildren)
+        </dd>
+
+        <dt style="font-size:15px">
+            Highest Education Qualification
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.EducationQualification.Level)
+        </dd>
+        <dt style="font-size:15px">
+            Name Of Institution
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.NameOfInstitution)
+        </dd>
+
+        <dt style="font-size:15px">
+            Date Of Employment
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.DateOfEmployment)
+        </dd>
+
+        <dt style="font-size:15px">
+            Annual Salary
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.AnnualSalary)
+        </dd>
+
+        <dt style="font-size:15px">
+            Position
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+        <dt style="font-size:15px">
+            Email
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt style="font-size:15px">
+            Last Date Of Promotion
+        </dt>
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.PromotedAt)
+        </dd>
+        <dt style="font-size:15px">
+            RegistrationID
+        </dt>
+
+        <dd style="color:dodgerblue">
+            @Html.DisplayFor(model => model.RegistrationID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+    <div class="glyphicon glyphicon-arrow-left">
+        @Html.ActionLink("Back", "Index") | @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+    </div>
+</p>
