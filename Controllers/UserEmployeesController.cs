@@ -226,12 +226,13 @@ namespace EmployeeManagement.Controllers
 
         {
 
+
+            /*var Usernames = User
+                .Identity
+                .GetUserName();*/
             var userId = User
                 .Identity
                 .GetUserId();
-            var Usernames = User
-                .Identity
-                .GetUserName();
             var isAdmin = UserManager
                 .IsInRole(userId, "Admin") ? true : false;
             if (isAdmin)
